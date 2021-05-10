@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My trip planner</string>
+    <string-array name="settings">
+        <item>Change Password</item>
+        <item>Feedback</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="action_settings">settings</string>
+</resources>

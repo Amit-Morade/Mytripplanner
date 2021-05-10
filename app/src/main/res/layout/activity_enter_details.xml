@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enter_details"
+    android:textColor="@color/black"
+    android:background="@drawable/plan_bg"
+    android:paddingLeft="25px">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Plan Details "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_marginTop="50dp"
+        android:letterSpacing=".3"
+        android:textStyle="bold"
+        android:id="@+id/heading"
+        />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Destination Name"
+        android:layout_below="@+id/heading"
+        android:id="@+id/destination"
+
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number of people"
+        android:layout_below="@+id/destination"
+        android:id="@+id/noofpeople"
+
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter start date"
+        android:inputType="date"
+        android:id="@+id/startdate"
+        android:layout_below="@+id/noofpeople"
+
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noofpeople"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/startdate"
+        android:hint="Enter end date"
+        android:inputType="date"
+        android:id="@+id/enddate"/>
+
+    <LinearLayout
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="onsubmit"
+            android:layout_marginRight="20dp"
+            android:id="@+id/submit"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:onClick="onbuttonclick"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
